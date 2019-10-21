@@ -1424,7 +1424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowPrefab: {fileID: 2442258178215251208, guid: 1c51e511dc159504199c7585783be3c8,
     type: 3}
-  arrowNockTransform: {fileID: 1030926664804566626}
+  arrowNockTransform: {fileID: 2442258178215625508, guid: 1c51e511dc159504199c7585783be3c8,
+    type: 3}
   nockDistance: 0.1
   lerpCompleteDistance: 0.08
   rotationLerpThreshold: 0.15
