@@ -197,7 +197,26 @@ namespace Valve.VR.InteractionSystem
 			{
 				if ( bow.pulled ) // If bow is pulled back far enough, fire arrow, otherwise reset arrow in arrowhand
 				{
-					FireArrow();
+                    GameObject arrow2 = InstantiateArrow();
+                    GameObject arrow3 = InstantiateArrow();
+
+                    arrow2.transform.position = currentArrow.transform.position;
+                    arrow2.transform.rotation = Quaternion.Euler(currentArrow.transform.rotation.x, currentArrow.transform.rotation.y + 10f, currentArrow.transform.rotation.z);
+                    arrow2.transform.localScale = currentArrow.transform.localScale;
+
+                    arrow3.transform.position = currentArrow.transform.position;
+                    arrow3.transform.rotation = Quaternion.Euler(currentArrow.transform.rotation.x, currentArrow.transform.rotation.y - 10f, currentArrow.transform.rotation.z);
+                    arrow3.transform.localScale = currentArrow.transform.localScale;
+
+                    FireArrow();
+
+                    currentArrow = arrow2;
+                    FireArrow();
+
+                    currentArrow = arrow3;
+                    FireArrow();
+
+                    
 				}
 				else
 				{
