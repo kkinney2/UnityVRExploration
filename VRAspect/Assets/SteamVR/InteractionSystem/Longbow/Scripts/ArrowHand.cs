@@ -250,7 +250,8 @@ namespace Valve.VR.InteractionSystem
             Invoke("EnableArrowSpawn", 0.5f);
             StartCoroutine(ArrowReleaseHaptics());
 
-            GameObject tempArrow = Instantiate(currentArrow);
+            //GameObject tempArrow = Instantiate(currentArrow);
+            StartCoroutine(DelayedArrow(currentArrow));
 
             currentArrow = null;
             allowTeleport.teleportAllowed = true;
@@ -263,6 +264,13 @@ namespace Valve.VR.InteractionSystem
             allowArrowSpawn = true;
         }
 
+        IEnumerator DelayedArrow(GameObject arrow)
+        {
+            GameObject tempArrow = arrow;
+            yield return new WaitForSeconds(1f);
+            Instantiate(tempArrow);
+            yield break;
+        }
 
         //-------------------------------------------------
         private IEnumerator ArrowReleaseHaptics()

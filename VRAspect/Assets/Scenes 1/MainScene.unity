@@ -1834,6 +1834,31 @@ MonoBehaviour:
   releaseVelocityStyle: 4
   releaseVelocityTimeOffset: -0.011
   scaleReleaseVelocity: 1.1
+  scaleReleaseVelocityThreshold: -1
+  scaleReleaseVelocityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   restoreOriginalParent: 0
   onPickUp:
     m_PersistentCalls:
@@ -4289,10 +4314,8 @@ MonoBehaviour:
   poseNames:
   - HappyBallPose (MAIN)
   - HappyBallPoseSqueezed
-  previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
-    type: 3}
-  previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
-    type: 3}
+  overridePreviewLeftHandPrefab: {fileID: 0}
+  overridePreviewRightHandPrefab: {fileID: 0}
   skeletonMainPose: {fileID: 11400000, guid: 5faebc5465b41b641bf7285f25ce9ab9, type: 2}
   skeletonAdditionalPoses:
   - {fileID: 11400000, guid: 6dc41a1d6d2a48e41a7adc3e27f1a9ff, type: 2}
@@ -4344,6 +4367,31 @@ MonoBehaviour:
   releaseVelocityStyle: 3
   releaseVelocityTimeOffset: -0.011
   scaleReleaseVelocity: 1.1
+  scaleReleaseVelocityThreshold: -1
+  scaleReleaseVelocityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   restoreOriginalParent: 0
   onPickUp:
     m_PersistentCalls:
@@ -8480,10 +8528,8 @@ MonoBehaviour:
   blendEditorExpanded: 1
   poseNames:
   - sphereSmallPose (MAIN)
-  previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
-    type: 3}
-  previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
-    type: 3}
+  overridePreviewLeftHandPrefab: {fileID: 0}
+  overridePreviewRightHandPrefab: {fileID: 0}
   skeletonMainPose: {fileID: 11400000, guid: ccd16738d1f943640aa2aed1071a3897, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
@@ -25163,6 +25209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPackage: {fileID: 11450054, guid: 98a3ad29136d5c04f8a025adf1cbd704, type: 3}
+  useItemPackagePreview: 1
   requireGrabActionToTake: 1
   requireReleaseActionToReturn: 0
   showTriggerHint: 1
@@ -31928,6 +31975,31 @@ MonoBehaviour:
   releaseVelocityStyle: 1
   releaseVelocityTimeOffset: -0.011
   scaleReleaseVelocity: 1.1
+  scaleReleaseVelocityThreshold: -1
+  scaleReleaseVelocityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   restoreOriginalParent: 0
   onPickUp:
     m_PersistentCalls:
@@ -32568,10 +32640,8 @@ MonoBehaviour:
   - spherePose (MAIN)
   - longbowPose
   - longboy
-  previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
-    type: 3}
-  previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
-    type: 3}
+  overridePreviewLeftHandPrefab: {fileID: 0}
+  overridePreviewRightHandPrefab: {fileID: 0}
   skeletonMainPose: {fileID: 11400000, guid: 4c3a83da33c30f44b82278a7f4ae8bd2, type: 2}
   skeletonAdditionalPoses:
   - {fileID: 11400000, guid: b11bd330216ce2944a1928a54925d7de, type: 2}
@@ -32647,6 +32717,31 @@ MonoBehaviour:
   releaseVelocityStyle: 3
   releaseVelocityTimeOffset: -0.011
   scaleReleaseVelocity: 1.1
+  scaleReleaseVelocityThreshold: -1
+  scaleReleaseVelocityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   restoreOriginalParent: 0
   onPickUp:
     m_PersistentCalls:
@@ -33218,8 +33313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e53a985809f0949b9a42cc2a6888c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemPackage: {fileID: 3629844640436211950, guid: 9748f19d4d1faf242b9b247cf36f357e,
-    type: 3}
+  _itemPackage: {fileID: 11450054, guid: 98a3ad29136d5c04f8a025adf1cbd704, type: 3}
+  useItemPackagePreview: 1
   requireGrabActionToTake: 1
   requireReleaseActionToReturn: 0
   showTriggerHint: 1
