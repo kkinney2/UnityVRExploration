@@ -226,6 +226,8 @@ namespace Valve.VR.InteractionSystem
         //-------------------------------------------------
         private void FireArrow()
         {
+            
+
             currentArrow.transform.parent = null;
 
             Arrow arrow = currentArrow.GetComponent<Arrow>();
@@ -237,8 +239,8 @@ namespace Valve.VR.InteractionSystem
             arrow.arrowHeadRB.useGravity = true;
             arrow.arrowHeadRB.transform.GetComponent<BoxCollider>().enabled = true;
 
-            arrow.arrowHeadRB.AddForce(transform.forward * bow.GetArrowVelocity(), ForceMode.VelocityChange);
-            arrow.arrowHeadRB.AddTorque(transform.forward * 10);
+            arrow.arrowHeadRB.AddForce(currentArrow.transform.forward * bow.GetArrowVelocity(), ForceMode.VelocityChange);
+            arrow.arrowHeadRB.AddTorque(currentArrow.transform.forward * 10);
 
             nocked = false;
             nockedWithType = GrabTypes.None;
@@ -250,8 +252,7 @@ namespace Valve.VR.InteractionSystem
             Invoke("EnableArrowSpawn", 0.5f);
             StartCoroutine(ArrowReleaseHaptics());
 
-            //GameObject tempArrow = Instantiate(currentArrow);
-            StartCoroutine(DelayedArrow(currentArrow));
+            GameObject tempArrow = Instantiate(currentArrow);
 
             currentArrow = null;
             allowTeleport.teleportAllowed = true;
